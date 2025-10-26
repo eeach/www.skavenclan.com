@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skaven Lair - Queekish & Name Generator</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Skaven Lair</h1>
+            <p class="subtitle">Yes-yes! Learn-speak Queekish and generate-make Skaven names!</p>
+        </header>
+
+        <div class="tabs">
+            <button class="tab-button active" onclick="switchTab('queekish', event)">Queekish Language</button>
+            <button class="tab-button" onclick="switchTab('runes', event)">Runic Alphabet</button>
+            <button class="tab-button" onclick="switchTab('font', event)">Skaven Font</button>
+            <button class="tab-button" onclick="switchTab('bookoftherat', event)">Book of the Rat</button>
+            <button class="tab-button" onclick="switchTab('generator', event)">Name Generator</button>
+            <button class="tab-button" onclick="switchTab('about', event)">About Skaven</button>
+        </div>
+
+        <div id="queekish" class="tab-content active">
+            <div class="card">
+                <h2>🗣️ Queekish Language Guide</h2>
+                <p>Queekish is the chittering, hasty language of the Skaven. Learn-speak it well-good!</p>
+
+                <h3>Grammar Rules</h3>
+                <div class="rule-box">
+                    <strong>Word Repetition:</strong> Skaven emphasize words by repeating them with a hyphen.
+                    <div class="example">Example: "kill-kill", "die-die", "quick-quick"</div>
+                </div>
+
+                <div class="rule-box">
+                    <strong>Synonym Pairs:</strong> Use two words meaning the same thing for eloquence.
+                    <div class="example">Example: "kill-slay", "fast-quick", "hate-despise"</div>
+                </div>
+
+                <div class="rule-box">
+                    <strong>Fragmented Sentences:</strong> Skaven speak quickly, breaking long thoughts into fragments.
+                    <div class="example">Example: "Must-must take-steal warpstone. Make-create great-mighty weapon!"</div>
+                </div>
+
+                <div class="rule-box">
+                    <strong>Double Scratch (//):</strong> The only punctuation mark, indicating stuttering pronunciation.
+                    <div class="example">Example: "Die// Hate//"</div>
+                </div>
+
+                <h3>Common Queekish Words & Phrases</h3>
+                <div class="queekish-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Queekish</th>
+                                <th>English</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Man-thing</td><td>Human</td><td>Derogatory term</td></tr>
+                            <tr><td>Dwarf-thing</td><td>Dwarf</td><td>Ancient enemies</td></tr>
+                            <tr><td>Elf-thing</td><td>Elf</td><td>Despised surface dwellers</td></tr>
+                            <tr><td>Yes-yes</td><td>Yes/Agreed</td><td>Enthusiastic affirmation</td></tr>
+                            <tr><td>No-no</td><td>No/Disagree</td><td>Strong denial</td></tr>
+                            <tr><td>Kill-kill</td><td>Kill</td><td>Battle cry</td></tr>
+                            <tr><td>Die-die</td><td>Die</td><td>Common threat</td></tr>
+                            <tr><td>Quick-quick</td><td>Quickly/Fast</td><td>Urgency</td></tr>
+                            <tr><td>Sneak-lurk</td><td>Sneak</td><td>Stealthy movement</td></tr>
+                            <tr><td>Great-mighty</td><td>Great/Powerful</td><td>Respect/fear</td></tr>
+                            <tr><td>Fool-stupid</td><td>Foolish</td><td>Insult</td></tr>
+                            <tr><td>Warpstone</td><td>Chaos crystal</td><td>Source of power</td></tr>
+                            <tr><td>Horned Rat</td><td>The Skaven god</td><td>Sacred entity</td></tr>
+                            <tr><td>Under-Empire</td><td>Skaven realm</td><td>Underground domain</td></tr>
+                            <tr><td>Clan-clan</td><td>Clan/Family</td><td>Tribal group</td></tr>
+                            <tr><td>War-war</td><td>War</td><td>Constant state</td></tr>
+                            <tr><td>Hate-hate</td><td>Hatred</td><td>Deep emotion</td></tr>
+                            <tr><td>Fear-fear</td><td>Fear</td><td>Constant companion</td></tr>
+                            <tr><td>Take-steal</td><td>Steal/Take</td><td>Acquire by force</td></tr>
+                            <tr><td>Make-create</td><td>Create/Make</td><td>Build/construct</td></tr>
+                            <tr><td>Neek-neek</td><td>Excited chatter</td><td>Uncontrollable excitement</td></tr>
+                            <tr><td>Eeek-eeek</td><td>Fear whine</td><td>High-pitched terror</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Speech Patterns</h3>
+                <p>When speaking the common tongue, Skaven maintain their linguistic quirks:</p>
+                <ul style="list-style-position: inside; margin: 1rem 0; color: var(--text-secondary);">
+                    <li>High-pitched, squeaky voices</li>
+                    <li>Rapid, hurried speech</li>
+                    <li>Frequent repetition of words</li>
+                    <li>Breaking thoughts into short fragments</li>
+                    <li>Adding hisses and squeaks between words</li>
+                    <li>Physical touching during conversation</li>
+                </ul>
+
+                <div class="rule-box">
+                    <strong>Example Skaven Dialogue:</strong><br>
+                    "Yes-yes! We strike-attack now-quick! Man-things will die-die! Great Horned Rat watch-see us! 
+                    We take-steal their food-treasure! Make-create new weapon-tools from their metal-iron! 
+                    They are weak-pathetic! We are strong-mighty! For the Under-Empire! Kill-slay them all-all!"
+                </div>
+            </div>
+        </div>
+
+        <div id="runes" class="tab-content">
+            <div class="card">
+                <h2>📜 Skaven Runic Alphabet</h2>
+                <p class="flip-hint">Hover-hover over any letter to reveal-see its sacred rune! Click-click to lock-keep it flipped!</p>
+
+                <div class="rune-grid" id="rune-grid">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+
+                <div class="rule-box" style="margin-top: 2rem; border-left-color: var(--text-secondary);">
+                    <strong>Attribution:</strong> All information on Skaven Runes is Copyright © 1996, 1997 Bob Lippman
+                </div>
+            </div>
+        </div>
+
+        <div id="font" class="tab-content">
+            <div class="card">
+                <h2>🖋️ Skaven TrueType Font</h2>
+                <p>Download-get the official Skaven TrueType font based on the runic alphabet! Use-write in the sacred-ancient script of the Horned Rat!</p>
+
+                <div class="download-section">
+                    <a href="files/skaven_font.zip" class="download-button" download>
+                        ⬇️ Download Skaven Font (ZIP)
+                    </a>
+                </div>
+
+                <h3>Installation Instructions</h3>
+
+                <div class="instruction-box">
+                    <h4 style="color: var(--accent-green); margin-bottom: 1rem;">🪟 Windows Installation</h4>
+                    <ol style="list-style-position: outside; margin-left: 2rem; color: var(--text-secondary);">
+                        <li>Extract the ZIP file to access the <strong>.ttf</strong> font file</li>
+                        <li>Right-click on the <strong>.ttf</strong> file</li>
+                        <li>Select <strong>"Install"</strong> or <strong>"Install for all users"</strong> from the menu</li>
+                        <li>The font will install-add automatically! Close and reopen any programs to use-access it</li>
+                    </ol>
+                    <div class="rule-box" style="margin-top: 1rem;">
+                        <strong>Alternative Method:</strong> Copy the .ttf file to <code style="color: var(--accent-yellow);">C:\Windows\Fonts</code>
+                    </div>
+                </div>
+
+                <div class="instruction-box">
+                    <h4 style="color: var(--accent-green); margin-bottom: 1rem;">🍎 Mac Installation</h4>
+                    <ol style="list-style-position: outside; margin-left: 2rem; color: var(--text-secondary);">
+                        <li>Extract the ZIP file to access the <strong>.ttf</strong> font file</li>
+                        <li>Double-click the <strong>.ttf</strong> file</li>
+                        <li>The Font Book application will open-appear</li>
+                        <li>Click the <strong>"Install Font"</strong> button at the bottom of the preview window</li>
+                        <li>The font is now ready-available! Restart any open programs to use-access it</li>
+                    </ol>
+                    <div class="rule-box" style="margin-top: 1rem;">
+                        <strong>Alternative Method:</strong> Copy the .ttf file to <code style="color: var(--accent-yellow);">~/Library/Fonts</code> or <code style="color: var(--accent-yellow);">/Library/Fonts</code>
+                    </div>
+                </div>
+
+                <div class="rule-box" style="margin-top: 2rem; border-left-color: var(--accent-yellow);">
+                    <strong>Note-Remember:</strong> The Skaven font maps-translates English letters to Skaven runes. Type-write normal text and it will appear-display in runic script! Perfect-excellent for documents, banners, and Skaven clan materials!
+                </div>
+
+                <div class="rule-box" style="margin-top: 1rem; border-left-color: var(--text-secondary);">
+                    <strong>Attribution:</strong> Skaven TrueType Font v9.1 - Copyright © 1997 Jim Sorenson
+                </div>
+            </div>
+        </div>
+
+        <div id="bookoftherat" class="tab-content">
+            <div class="card">
+                <h2>📕 Book of the Rat</h2>
+                <p>A comprehensive-complete guide-manual for running-creating Skaven campaigns in Warhammer Fantasy Roleplay!</p>
+
+                <div class="download-section">
+                    <a href="files/BookOfTheRat.pdf" class="download-button" download>
+                        ⬇️ Download Book of the Rat (PDF)
+                    </a>
+                </div>
+
+                <h3>About-Describe This Book</h3>
+                <p>This Skaven project is based on notes and guidelines drawn up for a Skaven campaign with players as Skaven characters. Seeking more treachery and politics in campaigns, and looking for something new and groundbreaking, these rules were designed to bring the Under-Empire to life.</p>
+
+                <div class="rule-box">
+                    <strong>What's Inside-Contains:</strong>
+                    <ul style="list-style-position: inside; margin: 1rem 0; color: var(--text-secondary);">
+                        <li>Extensive background and descriptions of Skaven society</li>
+                        <li>Detailed career paths for Skaven player characters</li>
+                        <li>Rules and mechanics for treachery, politics, and clan dynamics</li>
+                        <li>Combat skills and character development systems</li>
+                        <li>Tools for creating in-depth Skaven opponents with history and depth</li>
+                        <li>Adventure ideas and campaign inspiration</li>
+                    </ul>
+                </div>
+
+                <h3>Creator's Note-Words</h3>
+                <div class="instruction-box">
+                    <p style="color: var(--text-secondary); font-style: italic;">
+                        "Many, if not most people, will never intend on running a Skaven campaign. However, the extensive background and descriptions of Skaven society should help flesh the Skaven out to GMs who may never run the campaign but may get some use out of this work. Many of the careers and other descriptions should also inspire adventure ideas. It also allows GMs to make up Skaven opponents with some depth and history rather than applying the basic +30/+30/+2/+2/ etc. formula to the basic Skaven characteristics, and this book allows opponents to have combat skills."
+                    </p>
+                </div>
+
+                <div class="rule-box" style="margin-top: 2rem; border-left-color: var(--accent-yellow);">
+                    <strong>Note-Remember:</strong> While these rules were designed for a specific-particular campaign and have not been extensively playtested, they provide-offer rich material for understanding Skaven culture, creating memorable opponents, and inspiring your own Under-Empire adventures!
+                </div>
+
+                <div class="rule-box" style="margin-top: 1rem; border-left-color: var(--text-secondary);">
+                    <strong>Attribution:</strong> Book of the Rat by Garett Lepper
+                </div>
+            </div>
+        </div>
+
+        <div id="generator" class="tab-content">
+            <div class="card">
+                <h2>⚡ Skaven Name Generator</h2>
+                <p>Generate-create your Skaven identity! Choose a clan for themed names, or select Legacy for authentic d100 table rolling!</p>
+
+                <div id="quick-gen">
+                    <div class="generator-section">
+                        <div class="input-group">
+                            <label for="clan-select">Choose-pick your Clan:</label>
+                            <select id="clan-select" onchange="handleClanChange()">
+                                <option value="mors">Clan Mors (Warriors)</option>
+                                <option value="skryre">Clan Skryre (Engineers)</option>
+                                <option value="eshin">Clan Eshin (Assassins)</option>
+                                <option value="pestilens">Clan Pestilens (Plague Monks)</option>
+                                <option value="moulder">Clan Moulder (Flesh Crafters)</option>
+                                <option value="general">Generic Skaven</option>
+                                <option value="legacy">Legacy D100 Tables</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group" id="rank-group">
+                            <label for="rank-select">Choose-pick your Rank:</label>
+                            <select id="rank-select">
+                                <option value="clanrat">Clanrat (Common)</option>
+                                <option value="stormvermin">Stormvermin (Elite)</option>
+                                <option value="chieftain">Chieftain (Leader)</option>
+                                <option value="warlock">Warlock Engineer</option>
+                                <option value="assassin">Assassin</option>
+                                <option value="plague">Plague Priest</option>
+                                <option value="grey-seer">Grey Seer (Powerful)</option>
+                            </select>
+                        </div>
+
+                        <button onclick="generateQuickName()">Generate-make Name!</button>
+
+                        <div id="quick-result" class="result" style="display: none;">
+                            <span id="quick-name"></span>
+                        </div>
+                        
+                        <p id="legacy-note" style="display: none; color: var(--text-secondary); font-style: italic; margin-top: 1rem; font-size: 0.9rem;">
+                            Using legacy d100 tables... Rolling prefix and suffix dice!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="tab-content">
+            <div class="card">
+                <h2>📖 About the Skaven</h2>
+                <p>The Skaven are a race of malevolent rat-men who inhabit the Under-Empire, a vast network of tunnels and caverns beneath the surface world.</p>
+
+                <h3>Origins & Society</h3>
+                <p>The Skaven worship the Horned Rat, a powerful deity of corruption and decay. Their society is brutal and treacherous, dominated by the Council of Thirteen and divided into powerful clans. Betrayal and backstabbing are common, as every Skaven seeks to climb the hierarchy.</p>
+
+                <h3>The Great Clans</h3>
+                <ul style="list-style-position: inside; margin: 1rem 0; color: var(--text-secondary);">
+                    <li><strong style="color: var(--accent-red);">Clan Mors:</strong> Ruthless warriors who conquered Karak Eight Peaks</li>
+                    <li><strong style="color: var(--accent-yellow);">Clan Skryre:</strong> Mad engineers creating warpstone-powered weapons</li>
+                    <li><strong style="color: var(--text-secondary);">Clan Eshin:</strong> Deadly assassins trained in the Far East</li>
+                    <li><strong style="color: #10b981;">Clan Pestilens:</strong> Plague monks spreading disease and death</li>
+                    <li><strong style="color: var(--accent-green);">Clan Moulder:</strong> Flesh-crafters creating monstrous beasts</li>
+                </ul>
+
+                <h3>Warpstone & Technology</h3>
+                <p>Skaven technology is powered by warpstone, solidified Chaos energy. While unstable and dangerous, it grants the Skaven terrible weapons like ratling guns, warp-lightning cannons, and doom wheels. Grey Seers consume warpstone to enhance their magical powers.</p>
+
+                <h3>Lifespan & Culture</h3>
+                <p>Most Skaven live only 25-35 years due to their violent culture, though powerful individuals can live for centuries. They breed rapidly, producing vast numbers to overwhelm their enemies. Physical touch is important in Skaven communication, and scent plays a crucial role in their social interactions.</p>
+
+                <div class="rule-box">
+                    <strong>The Curse of Thirteen:</strong> The number 13 holds special significance for the Skaven. The Council of Thirteen rules the Under-Empire, and the number appears throughout their culture and religious practices.
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>A tribute-remake to the ancient-old Skaven website</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+                Original legacy site: <a href="https://legacy.skavenclan.com/">legacy.skavenclan.com</a>
+            </p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+                For information about Skaven in Belegarth, visit the <a href="https://geddon.org/Skaven">BelegarthWiki</a>
+            </p>
+            <p style="margin-top: 1rem; color: var(--border); text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+                Yes-yes! Site work-made in 2025! 🐀
+            </p>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
