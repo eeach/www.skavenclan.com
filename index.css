@@ -247,8 +247,11 @@ h3 {
     transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
+/* Only apply hover effect on devices with hover capability (not touch screens) */
+@media (hover: hover) and (pointer: fine) {
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
 }
 
 .flip-card.locked .flip-card-inner {
